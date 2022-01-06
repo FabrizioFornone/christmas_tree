@@ -7,24 +7,16 @@ function createBox(stampHtml) {
 
 hookHtml = document.querySelector(".hook-js");
 
-function drawTree(h) {
-  for (let i = 0; i < h; i++) {
-    let coloredSquare = "";
-    //Cambiato in coloredSquared alto poi diminuisci
-    for (let k = 1; k <= h-i; k++) {
-      //shortened to one space
-      coloredSquare = createBox(hookHtml);
-    }
-    for (let j = 0; j <= i; j++) {
-      /*Spazio aggiunto quindi c'è un numero dispari
-      di simboli e il colloredsquared sopra si adatta
-      lo spazio*/
-      coloredSquare = createBox(hookHtml);
-      coloredSquare.classList.add("colored");
-    }
-    //Moved into the loop
-    console.log(coloredSquare);
+let n = 6;
+
+// External loop
+for (let i = 1; i <= n; i++) {
+  // printing spaces
+  for (let j = 1; j <= n - i; j++) {
+    createBox(hookHtml);
+  }
+  // printing star
+  for (let k = 0; k < 2 * i - 1; k++) {
+    createBox(hookHtml).classList.add("colored");
   }
 }
-
-drawTree(6);
