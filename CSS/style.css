@@ -18,3 +18,7 @@ header h1 {
   width: 100px;
   border: 2px solid whitesmoke;
 }
+
+.colored {
+    background-color: green;
+}
