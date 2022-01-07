@@ -1,13 +1,14 @@
 // Aggancio con il DOM
 hookHtml = document.querySelector(".hook-js");
 
-let starIndex = 5;
+// Dichiaro un indice starIndex = 5
+let stellaIndex = 5;
 for (let k = 0; k < 1; k++) {
   for (let j = 0; j < 11; j++) {
     let box = document.createElement("div");
     box.classList.add("box-style");
     hookHtml.append(box);
-    if (j === starIndex) {
+    if (j === stellaIndex) {
       // Dichiaro boxInside, creando un elemento
       let boxInside = document.createElement("div");
       boxInside.classList.add("star-box");
@@ -36,7 +37,7 @@ for (let i = 0; i < 6; i++) {
       box.classList.add("colored");
       // Dichiaro boxInside, creando un elemento
       let boxInside = document.createElement("div");
-      boxInside.classList.add("balls-box"); 
+      boxInside.classList.add("balls-box");
       // Lo stampo dentro il box principale
       box.append(boxInside);
     }
