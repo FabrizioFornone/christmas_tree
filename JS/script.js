@@ -19,7 +19,9 @@ for (let i = 0; i < 6; i++) {
     if (j >= startIndex && j <= endIndex) {
       // Aggiungo una classe box colorato
       box.classList.add("colored");
+      // Dichiaro boxInside, creando un elemento
       let boxInside = document.createElement("div");
+      // Lo stampo dentro il box principale
       box.append(boxInside);
     }
   }
