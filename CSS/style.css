@@ -22,7 +22,7 @@ header h1 {
   align-items: center;
 }
 
-.box-style > div {
+.balls-box {
   height: 30%;
   width: 30%;
   border-radius: 50%;
@@ -35,4 +35,12 @@ header h1 {
 
 .trunk {
   background-color: brown;
+}
+
+.star-box::after {
+  font-size: 95px;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  color: gold;
 }
