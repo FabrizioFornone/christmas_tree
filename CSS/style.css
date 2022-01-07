@@ -16,19 +16,23 @@ header h1 {
 .box-style {
   height: 100px;
   width: 100px;
-  border: 2px solid whitesmoke;
+  border: 1.5px solid whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box-style > div {
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   border-radius: 50%;
   background-color: crimson;
 }
 
 .colored {
   background-color: green;
+}
+
+.trunk {
+  background-color: brown;
 }
