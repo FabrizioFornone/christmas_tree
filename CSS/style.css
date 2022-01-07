@@ -17,8 +17,18 @@ header h1 {
   height: 100px;
   width: 100px;
   border: 2px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-style > div {
+  height: 40%;
+  width: 40%;
+  border-radius: 50%;
+  background-color: crimson;
 }
 
 .colored {
-    background-color: green;
+  background-color: green;
 }

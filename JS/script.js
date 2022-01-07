@@ -19,6 +19,8 @@ for (let i = 0; i < 6; i++) {
     if (j >= startIndex && j <= endIndex) {
       // Aggiungo una classe box colorato
       box.classList.add("colored");
+      let boxInside = document.createElement("div");
+      box.append(boxInside);
     }
   }
   // Decrementa l'indice startIndex
